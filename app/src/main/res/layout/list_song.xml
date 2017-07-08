@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/act_list_song_rl">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:id="@+id/iv_song_image"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_song_path"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_toEndOf="@id/iv_song_image"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_toRightOf="@id/iv_song_image" />
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_song_path"
+        android:layout_toRightOf="@id/iv_song_image"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:id="@+id/tv_created_at"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_created_at"
+        android:layout_toRightOf="@id/iv_song_image"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:id="@+id/tv_updated_at"/>
+
+</RelativeLayout>

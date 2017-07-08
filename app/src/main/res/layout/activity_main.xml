@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.chirag.exoplayer.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_song"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.AppCompatSeekBar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_15sdp"
+            android:background="#000000"
+            android:id="@+id/sb_music"
+            android:progressBackgroundTintMode="src_in"
+            android:progressBackgroundTint="@color/white"
+            android:secondaryProgressTint="@color/colorPrimaryDark"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <TextView
+                android:textColor="#000000"
+                android:text="00:00"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:id="@+id/tv_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#000000"
+                android:text="00:00"
+                android:layout_marginLeft="@dimen/_200sdp"
+                android:id="@+id/tv_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/bt_rewind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rv_song"
+                android:layout_marginLeft="@dimen/_40sdp"
+                android:src="@drawable/ic_fast_rewind_black_48dp" />
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/bt_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rv_song"
+                android:layout_marginLeft="@dimen/_60sdp"
+                android:src="@drawable/ic_play_arrow_black_48dp" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/bt_forward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_60sdp"
+                android:src="@drawable/ic_fast_forward_black_48dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
